@@ -11,3 +11,8 @@ class BlogArticle(models.Model):
     content = models.TextField()
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
+    publish_date = models.DateTimeField(null=True, blank=True)
+    is_published = models.BooleanField(default=False)
+
+    def __str__(self):
+        return 'Cool text: '+self.title

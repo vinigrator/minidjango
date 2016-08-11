@@ -1,4 +1,33 @@
 <html>
-    <p>Hi there!</p>
-    <p>It works!</p>
+    <head>
+        <title>Blog</title>
+        <style>
+          h2 {text-align: center; font-size: 24px;}
+          h2 a{text-decoration: none; text-color: #000;}
+          h2 a:visited{text-decoration: none; text-color: #000;}
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1><a href="">Blog</a></h1>
+        </div>
+
+        <div>
+        {% for post in posts %}
+            {% if post.is_published %}
+            <p>published: {{post.updated}}</p>
+            <h2><a href="">{{post.title}}</a></h2>
+            <p>{{post.content}}</p>
+            {% endif %}
+        {% endfor %}
+
+
+        </div>
+
+        <div>
+            <p>published: 14.06.2014, 12:14</p>
+            <h2><a href="">My second post</a></h2>
+            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
+        </div>
+    </body>
 </html>
