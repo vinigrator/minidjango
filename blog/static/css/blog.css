@@ -1,0 +1,44 @@
+* {margin:0px; padding:0px;}
+body, html {width:100%; background-color:#DFE3E4; height: 100%;}
+.clear {clear: both;}
+
+h1 {font-family: 'Lobster';}
+
+/*Для заголовка сайта*/
+.head{background-color: black; color: #FFC54A; margin:auto; width:90%; height: 100px; padding-top:10px; float:left; margin-left:5%; margin-bottom: 20px;
+border-radius: 0px 0px 10px 10px;
+-webkit-border-radius: 0px 0px 10px 10px;
+-moz-border-radius: 0px 0px 10px 10px;}
+.head h1{ color: #FFC54A; text-align: center;}
+.head h1 a{text-decoration: none; color: #FFC54A;}
+
+/* Контент */
+.content{min-height:100%; width:87%; margin: auto;}
+
+.content .post{background:url("../images/bg_post.jpg") repeat; margin-top: 10px; padding: 10px; color:#DFE3E4;
+border-radius: 7px;
+-webkit-border-radius: 7px;
+-moz-border-radius: 7px;}
+.content .post .pu_date{font-size: 10px; float: right;}
+.content .post .article{font-size: 16px;}
+.content .post .author{float:right; color: white;}
+.content h2{ color: #FFC54A; text-align: center; font-family: 'Lobster'; font-size: 32px;}
+.content h2 a{text-decoration: none; color: #FFC54A;}
+
+
+
+/*Футер*/
+/* Организация футера*/
+.zag{height:110px; clear:both;} /* для прижатия футера вниз */
+.footer {background-color: black; width:90%; margin:-80px auto 0; height:81px; position:relative; font-family: 'Lobster';
+border-radius: 10px 10px 0px 0px;
+-webkit-border-radius: 10px 10px 0px 0px;
+-moz-border-radius: 10px 10px 0px 0px;}
+
+.footer  a{color:#000; background-color:#FFC54A; font-size:14px; text-decoration:none; float:right; margin-right:3px; padding:0 10px;
+border-radius: 0px 0px 5px 5px;
+-webkit-border-radius: 0px 0px 5px 5px;
+-moz-border-radius: 0px 0px 5px 5px;}
+.footer  a:first-child{margin-right:30px;}
+
+.footer  h6{color:#fff; font-size:14px; float:right; margin:40px 30px 5px 0;}

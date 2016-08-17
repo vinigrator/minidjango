@@ -1,0 +1,20 @@
+{% extends 'default.html' %}
+
+    {% block content %}
+        {% if post.is_published %}
+            <div class="post">
+            <h2 class="article_name"><a href="{% url 'post_detail' pk=post.pk %}">{{post.title}}</a></h2>
+                <h2 class="author">Автор статьи: {{post.author}}</h2>
+                <div class="clear"></div>
+            <div class="article"> {{post.content}}</div>
+                <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+            <p class="pu_date">published: {{post.updated}}</p>
+            <div class="clear"></div>
+            </div>
+        {% else %}
+            <div class="post">
+            <h2 class="article_naem">Статья ещё не опубликована!</h2>
+            <div class="clear"></div>
+            </div>
+        {% endif %}
+    {% endblock content %}
